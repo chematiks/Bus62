@@ -6,12 +6,19 @@
 //  Copyright (c) 2014 Chematiks. All rights reserved.
 //
 
+
+//Google Maps API key @"AIzaSyAeXLfiHpuVsAYPnrOipZzfnZk-SezKpvE"
+
+
 #import "BGMAppDelegate.h"
+#import <GoogleMaps/GoogleMaps.h>
 
 @implementation BGMAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
+    
+    [GMSServices provideAPIKey:@"AIzaSyAeXLfiHpuVsAYPnrOipZzfnZk-SezKpvE"];
     // Override point for customization after application launch.
     return YES;
 }
